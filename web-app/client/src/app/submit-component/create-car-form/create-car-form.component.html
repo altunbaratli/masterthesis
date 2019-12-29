@@ -1,0 +1,21 @@
+<div>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+    <div class="form-group">
+      <label for="tempA">TempA</label>
+      <input type="text" class="form-control" name="tempA" required ngModel>
+    </div>
+    <div class="form-group">
+      <label for="tempB">TempB</label>
+      <input type="text" class="form-control" name="tempB" required ngModel>
+    </div>
+    <div class="form-group">
+      <label for="tempC">TempC</label>
+      <input type="text" class="form-control" name="tempC" required ngModel>
+    </div>
+    <div class="form-group">
+      <label for="owner">Owner</label>
+      <input type="text" class="form-control" name="owner" required ngModel>
+    </div>
+    <button [disabled]="!f.valid" type="submit" class="btn btn-success">Create Measurement</button>
+  </form>
+</div>

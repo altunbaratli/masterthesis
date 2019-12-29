@@ -1,0 +1,22 @@
+
+<table>
+  <thead>
+    <th>Key</th>
+    <th>TempA</th>
+    <th>TempB</th>
+    <th>TempC</th>
+    <!-- <th>Owner</th> -->
+    <th>Decision</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of cars">
+      <td>{{item.Key}}</td>
+      <td>{{item.Record.tempA}}</td>
+      <td>{{item.Record.tempB}}</td>
+      <td>{{item.Record.tempC}}</td>
+      <!-- <td>{{item.Record.owner}}</td> -->
+      <td>{{item.Record.decision}}</td>
+    </tr>
+  </tbody>
+</table>
+
